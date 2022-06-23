@@ -87,7 +87,7 @@ public class Res extends RESTService {
    * gettest
    *
    * 
-   *
+   * @param id  a String
    * 
    * @return Response 
    * 
@@ -100,7 +100,7 @@ public class Res extends RESTService {
        @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "res")
   })
   @ApiOperation(value = "gettest", notes = " ")
-  public Response gettest() {
+  public Response gettest(@PathParam("id") String id) {
 
 
 
